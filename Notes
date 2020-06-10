@@ -1,0 +1,82 @@
+1)  public static getConnection(String url,String username,String password)-->is to establish connection with 
+specified url username and password
+
+2)  Connection-->is an interface  which creates a session between Java App and DB
+public Statement createStatement-->creates a statement object that can be used to execute the queries
+public void commit()-->to save the changes
+public void rollback()-->drop all the changes made since the previuos commit
+public void close()-->to close the connection
+
+3)  Statement:it is an interface which provides methods to execute queries
+public ResultSet executeQuery(String query)-->it is used to execute SELECT query.
+public int executeUpdate(String query)-->it is used to create , update,delete etc output will be n number of rows affected
+public int[] executeBatch()-->it is used to execute batch of commands
+
+4)  ResultSet:it is an interface which manages the curser pointing to a row of a table
+public boolean next()          -->help us to move the cursor to one row next to the current row
+public boolean previous()      -->help us to move the cursor to one row previous to the current row
+public boolean first()         -->help us to move the cursor to first row
+public boolean last()          -->help us to move the cursor to first row
+public int getInt(int colomnIndex)          -->it is used to get the data of the specified colomn index
+public int getInt(String colomnName)        -->it is used to get the data of the specified colomn name
+public String getString(int colomnIndex)    -->it is used to get the data of the specified colomn index
+public String getString(String colomnName)  -->it is used to get the data of the specified colomn name
+public ResultSetMetaData getMetaData()      -->it returns the object of resultsetmetadata.
+
+Assignment:
+1.WAM which returns connection object
+2.write a method to close the connection(conn object)
+3.wam to create update delete operations(params query)
+4.wam to read or select data from DB(query)
+
+ResultSetMetaData:is an interface which provides information about the data
+public int getColumnCount()                   -->it returns total no of columns in the result set.
+public String getColumnName(int index)        -->it returns the name of the column specified by the index.
+public String getColumntypeName(int index)    -->it returns the column type name of the specified index.
+public String getTableName(int index)         -->it returns the table name of the specified column index.
+public String getColumnType(int columnindex)  -->it returns the int of type of datatype associated with the specified column like for 
+                                                 integer=4,varchar=12 etc 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

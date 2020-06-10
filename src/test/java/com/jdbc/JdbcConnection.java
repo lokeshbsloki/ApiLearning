@@ -8,7 +8,10 @@ import java.sql.Statement;
 
 import org.testng.annotations.Test;
 
-public class JdbcConnection {
+import com.util.DbUtil;
+
+
+public class JdbcConnection  {
 
 // jdbc driver and url	
 public final String JDBC_DRIVER="com.mysql.jdbc.Driver";	
@@ -21,11 +24,14 @@ public final String PWD="lokesh";
 @Test
 public void connectdb() {
 	Connection conn=null;
-	Statement stat;
+	Statement stat=null;
 	try {
 		//to register the driver
 		//	Class.forName(JDBC_DRIVER);
 		//create a connection to a db
+		//driver manager class acts as a driver btw user and database it keeps the track of the drivers that are available 
+		//for establishing connection to the DB
+		//getConnection(String url) is used to establish the connection with specified url
 		conn = DriverManager.getConnection(DB_URL, UN, PWD);
 		 stat = conn.createStatement();
 		 //create a table in db
@@ -39,6 +45,12 @@ public void connectdb() {
 		 String insertvalue2="INSERT INTO Employee "+"VALUES(102,'Anusha','anusham1993@gmail.com','9618958035')";
 		 //stat.executeUpdate(insertvalue2);
 		 
+		 String updatequery="UPDATE Employee "+"SET mobile='8553953873' "+"WHERE empid=101";
+		 //stat.executeUpdate(updatequery);
+		 
+		 String deletequery="DELETE FROM Employee WHERE empid=102";
+		 //stat.executeUpdate(deletequery);
+		 
 		 String retrivedata="SELECT * FROM Employee";
 		 ResultSet res = stat.executeQuery(retrivedata);
 		 while(res.next()) {
@@ -46,11 +58,13 @@ public void connectdb() {
 			 System.out.println(res.getInt("empid")+" "+res.getString("ename")+" "+res.getString("email")+" "+res.getString("mobile"));
 		 }
 		 
+		 
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
 	finally {
 		try {
+			stat.close();
 			conn.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
