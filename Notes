@@ -3,14 +3,17 @@ specified url username and password
 
 2)  Connection-->is an interface  which creates a session between Java App and DB
 public Statement createStatement-->creates a statement object that can be used to execute the queries
-public void commit()-->to save the changes
-public void rollback()-->drop all the changes made since the previuos commit
-public void close()-->to close the connection
+public void commit()							-->to save the changes
+public void rollback()							-->drop all the changes made since the previuos commit
+public void close()         					-->to close the connection
+public PreparedStatement preparedstatement()    -->creates a prepared statement object
 
 3)  Statement:it is an interface which provides methods to execute queries
-public ResultSet executeQuery(String query)-->it is used to execute SELECT query.
-public int executeUpdate(String query)-->it is used to create , update,delete etc output will be n number of rows affected
-public int[] executeBatch()-->it is used to execute batch of commands
+public ResultSet executeQuery(String query)     -->it is used to execute SELECT query.
+public int executeUpdate(String query)     		-->it is used to create , update,delete etc output will be n number of rows affected
+public int[] executeBatch()						-->it is used to execute batch of commands
+public void addBatch(String query)     			-->to add more than 1 query and execute batch wise 
+                                      				after that executebatch() will execute
 
 4)  ResultSet:it is an interface which manages the curser pointing to a row of a table
 public boolean next()          -->help us to move the cursor to one row next to the current row
@@ -36,11 +39,19 @@ public String getColumntypeName(int index)    -->it returns the column type name
 public String getTableName(int index)         -->it returns the table name of the specified column index.
 public String getColumnType(int columnindex)  -->it returns the int of type of datatype associated with the specified column like for 
                                                  integer=4,varchar=12 etc 
+                                                 
+                                                 
+PreparedStatements:it is an subInterface of statement which is used to execute the parameterized query.                                                 
+public void setInt(int index,int value)          -->sets the integer value for the specified index.
+public void setDouble(int index,double value)    -->sets the double value for the specified index.
+public void setFloat(int index,float value)      -->sets the float value for the specified index.
+public void setString(int index,String value)    -->sets the String value for the specified index.
+public ResultSet executeQuery(String query)-->it is used to execute SELECT query.
+public int executeUpdate(String query)-->it is used to create , update,delete etc output will be n number of rows affected
 
-
-
-
-
+Assignment:
+1.wam to create update and delete using preparedstatement
+2.wam to read/select using preparedStatement
 
 
 

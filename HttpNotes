@@ -1,0 +1,164 @@
+1)HTTP    :Hypertext transfer protocol :communication between client and server is done by sending HTTP 
+           resuest and receving http response
+
+Http Request/response
+1.A client(browser) sends an http request to the webserver.
+2.Webserver receives the request. 
+3.Server will run an application to process the request.
+4.server returns a http response to the browser.
+5.the client receives the response.
+
+Http Structure: Like in HTML, HTTP protocol also has header and body.
+Header and body are seperated by space.
+
+HTTP Response Key elements:
+1.Status code    :It represents the status of the HTTP request.it is the mandatory info and it is present in the header of the response.
+2.Content-Type   :It is not mandatory info available in the header of the http response which specify type of Content available in the
+                  response body.
+                  eg: html  text/html
+                      xml   Application/xml
+                      JSON  Application/json
+                      zip   Application/zip
+                      Image File/Png
+3.Actual-Data   :it is not mandatory(optional) implimentation present in the body of http response.it is the actual info/data which 
+                 we are going to receive from server.
+                 
+
+HTTP Request Key elements:  
+1.Http Method   :it is mandatory element present in the header of the http request.it specifies the the type of request sent by the 
+                  client they are 8 http methods available they are GET,POST,PUT,PATCH,DELETE,OPTIONS,HEADER,TRACE 
+2.WebUrl        :it is an mandatory element present in the http request.it is used to identify the specific resource in the web
+                 application(Static-data will be constant/Dynamic-data will be change acc to request or user)
+3.Cookies       : Data stored in the browser.                                            
+
+(IQ:what kind of responses you have come across?)
+Responses are grouped into 5 classes:
+1.Information Responses(100-199)
+2.Successful Responses(200-299)
+3.Redirects(300-399)
+4.Client Errors(400-499)
+5.Server side errors(500-599)
+
+
+XML   :it stands for Extended Markup Language.it is programming language and it is platform independent which helps to store and 
+       communicate data between two applications which are built on same or different platforms(like java ,python,c#)
+       
+Structure of XML:
+As name implies it is an extention of HTML.xml looks like html but all tags are user defined in xml and are case Insensitive
+in XML we have to follow the syntax strictly
+
+1.xml always starts with a prologue
+   <?XML version="1.0" encoding="UFT-8">
+   
+2.we comment using <-- -->
+3.XML structure follows tree structure like html.   
+      <root>
+            <child>
+  					<subchild>
+            	    </subchild>
+           </child>
+      </root> 
+      
+      eg:
+      
+          <bookstore>
+                    <catagories>
+                         <catogory name="stories">
+                              <book>
+                                    <title>jumanji</title>
+                                    <author>chris</author>
+                              </book>
+                         </catogory>
+                         <catogory name="">
+                             <book>
+                                   <title></title>
+                             </book>
+                         </catogory>
+                   </catogories>
+         </bookstore>                                      
+                             
+ 1. bookstore    -->element  
+ 2. name         -->attributes
+ 3. jumanji      -->PCData(parsed char data)(btw close>< and open tags)
+ 4. Cdata        -->char data-used to convert all info into char
+                  syntax: <![CDATA[   ]]
+ 5. elements can be extended and attributes cannot  
+ 6.Entity reference:
+          &gt    -->greater than
+          &lt    -->lesserthan
+          &amp   -->&
+          &apos  -->'
+          &gte   -->greater than equal to
+          
+          
+Rules for defining xml elements
+1.they are case sensitive
+2.they must start with letter or underscore
+3.cannot have spaces
+4.it cannot use the reservered words
+
+XML schema:
+xml helps us to store and transfer the data from one app to another,while sending the data it is essential that both the apps have 
+same expectations and agreements about the content of the xml.
+we can define the schema in two ways 
+1.XSD -->xml schema definition
+2.DTD -->document type definition          
+                                
+                         
+ XML parser   : parser is used to convert java to xml and viceversa
+                JaxB is a inbuilt java parser available from java 1.6 onwards which is used to convert java to xml and viceversa
+Converting java to xml is  -->marshalling
+ Converting xml to java is -->unmarshalling
+ 
+ 
+ POJO -->page old java object
+                                         
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
