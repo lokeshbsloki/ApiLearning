@@ -1,0 +1,99 @@
+Refer Screenshot for architecture(RS)
+1.The above architecture is a service oriented architecture 
+2.Testing the app in the source code layer/Bussiness layer is called as API Testing
+3.there are 3 types of api testing
+  3.1) a)White Box Testing : WBT is done by the developer
+       b)testing the untouched source code of the app via another java program is called as WBT
+  3.2)SOAP
+  3.3)REST
+
+Soap in this wsdl is used to communication
+WSDL protocol: web services description language : used for info exchange(like http methods for xml-wsdl)like http protocol
+
+http://localhost:8091  --->url
+/add/2/3  ---->endpoints(method name and parametetrs/query)
+
+
+REST: representational state transfer technology
+Why REST?
+1.language independent
+2.no need extra protocol(usses http protocol)
+3.it can use both xml and json
+4.using json is easy
+
+
+
+Web Services API Testing:
+  As name indicates services available over the web is called as web services.
+  
+1.The client request from the application via communication protocol such as HTTP, and generate response back to the client.
+2.WebServices is a concept and platform independent.
+3.WebServices help web application to interact with any other applications like Mobile,WebApp running on same or different platform
+4.WebServices has 2 participants 
+   4.1)Service Provider: it is the one who develops/exposes web services over the web
+       b)whenever a service is exposed over a URL it is known as REST Web Services 
+       c)whenever a service is exposed via WSDL file it is known as Soap Web Services 
+   4.2)Service Consumer: it is the one who consumes or uses the web services 
+   
+Advantages of WebServices
+
+1.WebServices are inter operable i.e they are platform application and technology independent   
+2.It is loosly Coupled i.e each app is independent of one another hence changes made on one side does not impact on other side
+3.service Reusability i.e web services will open the door for new business opportunity by making easy to connect with the partners 
+4.No need of re inventing the wheel i.e web services reduces the software development time which will help the person to quickly develop
+  an application and start the business.
+  
+  
+REST: stands for REpresentational State Transfer 
+1.it is an architectural style to communicate and transfer the data between 2 applications
+
+Why Rest is popular?/advantages of rest web services?
+
+1.Rest is an architectural style and doesnot require any additional protocol
+2.Quick response
+3.It can return both XML and JSON
+4.it is language independent
+5.Easy integration with GUI/Mobile
+6.Parsing Data will be easier
+
+
+Popular Tools Available For REST API Testing
+1.PostMan
+2.RestClient
+3.RestAssured
+
+Assignment
+find app which integated 2 apps(5 apps)
+1.PUBG             -->uses FaceBook api
+2.INDIGO 		   -->uses AIR asia,and many other flights company api
+3.MYJIO 	       -->uses paytm api to recharge 
+4.Payment Gateway  --> uses bank api to pay
+5.foodpanda        -->uses hotels api
+6.oyo              -->uses hotels api
+7.just dial        -->uses api of different company for thier info
+8.Naukari          -->companies carrers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

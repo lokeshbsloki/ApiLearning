@@ -112,6 +112,92 @@ Converting java to xml is  -->marshalling
  
  
  POJO -->page old java object
+ 
+ JSON  -->stands for Java Script Object Notation
+          (programing language and platform independent ,light weight ,java script is easily convertible)
+          like XML ,JSON is also programming language and platform independent which helps to store data and transfer data between 2 apps.
+          running on same or different platform.
+          JSON is light weight compare to XML.And it is very easy to parse data from client side.
+          To convert java to JSON we can use GSON or JACKSON API.
+          
+          
+JSON Format:
+1.json content always in the form of KEY:VALUE pair. 
+2.{} is represents an object.
+3.[] represents an array
+4.Key and Value are seperated by a colon(:)
+5.Data are sepearted by comma(,)
+6.Keys are always a string("")
+7.Data or value can be a string/an array/an object
+
+Example:JSON Object
+
+{
+  "Books":[
+               {
+                  "id"     :123,
+                  "name"   :"2states",
+                  "author" :"chethan Bhagath"
+               },
+               {
+                  "id"     :124,
+                  "name"   :"3idiots",
+                  "author" :"chethan Bhagath"
+               }
+          ]
+}
+  
+JSON Value Data type:
+{
+        "name"     : "lokesh",                 ------>String
+        "id"       : 123,                      ------>Number
+        "contract" : true,                     ------>Boolean
+        "wife"     : null,     			      ------>Object
+        "mobile"   : [8618958034,8553953873],  ------>Array
+        "car"      : [                         ------>Array of Objects
+                        {
+                          "name":"Etios"
+                          "Type":"Petrol"
+                        },  
+                         {
+                          "name":"Audi"
+                          "Type":"Petrol"
+                        }
+                    ]    
+}  
+
+
+Difference between JSON and Xml
+   JSON || XML
+1.it is a way of representing the object in the form of Key:value pairs ||  1.it is a markup language uses tag structure to 
+                                                                               represent the data
+2.Json is light weight compare to xml
+3.Json structure is simple compare to XML
+4.Json supports an Array but xml doesnot support an array.
+5.In a webservices is develop in json it is called as RESTFULL Web Services || web services developed by xml called 
+																			   Soap Web Services   
+6.No prologue in Json || it is present in xml
+
+
+How to convert JAVA to JSON
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
                                          
         
 
