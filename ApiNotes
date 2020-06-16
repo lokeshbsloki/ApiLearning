@@ -70,10 +70,43 @@ find app which integated 2 apps(5 apps)
 4.Payment Gateway  --> uses bank api to pay
 5.foodpanda        -->uses hotels api
 6.oyo              -->uses hotels api
-7.just dial        -->uses api of different company for thier info
-8.Naukari          -->companies carrers
 
 
+
+
+Postman
+how to create a collection?
+1.click on the new button on left-top corner/ file-new
+2.select collection,enter the collection name and click on create.
+
+URI-stands for Uniform Resource Identifier
+1.it is a sequence of characters that allows the complete identification of any physical resource 
+
+URL-Uniform Resource Locator
+1.it is a subset of URI that defines where the resource is available i.e. it provides the means of locating the resource by describing
+  its primary access mechanism
+  
+EndPoint:(URI=URL+endpoint)
+An endpoint defines the location of the resource /
+The place where a client can send a request where resource is present is called as an EndPoint.
+
+Path Parameter:http: here    URI      		=//localhost:3000/posts/{id}
+                             URL	  		=//localhost:3000
+                             endpoint 		=/posts
+                             path parameter =/{id}
+                             URI            =URL+EndPoint+PathParameter
+                             To get localhost: cmd+ipconfig+enter :ipv4 address
+                             
+1.it is a type of parameter that lives within end point of URI
+2.path parameters help us to access a single resource 
+3.path parameters are surrounded by curly brackets 
+ eg:Ex: /posts/{id}
+ 
+ assignment:repeate http methods of posts to comments and profile
+            like http://localhost:3000/comments
+                 http://localhost:3000/profile
+
+  
 
 
 
