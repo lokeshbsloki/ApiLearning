@@ -105,6 +105,40 @@ Path Parameter:http: here    URI      		=//localhost:3000/posts/{id}
  assignment:repeate http methods of posts to comments and profile
             like http://localhost:3000/comments
                  http://localhost:3000/profile
+                 
+Query Parameter:
+1.it is separated by a question mark(?) in the url.
+2.it appears and the end of the url after the ? mark    
+3.the ? ,the parameter and its real value is refered to as query String  
+4. the features of query parameters are 
+    4.1)they are optional
+    4.2)they are non unique
+    
+diff btw path and query parameter?
+1.part of uri/1.separated by ?
+2.just value/2.key and value pair
+
+
+Environmental Variables: it allows the use of the variables for different environments such as development,testing,production
+2.only one environment can be active at a time
+
+steps to create environment: 
+1.click on the manage environment icon 
+2.select create new environment 
+3.click on add , enter the envi name ,specify the variables and click on add
+4.to select an environment from the drop down
+5.to get variable we should use {{}}
+
+
+Collection Variables:1.These are available thorought the request in a collection and are independent of environment
+                     i.e they need not change based on the selected environment               
+2.These are suitable if we are using single environment for eg to define URL authorization
+
+steps to create 
+1.go to perticluar collection
+2.click on edit , click on variables,enter the variables and click on update
+3. to use it we use {{url}} -->url=http://localhost:3000
+                 
 
   
 
