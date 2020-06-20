@@ -139,13 +139,17 @@ steps to create
 2.click on edit , click on variables,enter the variables and click on update
 3. to use it we use {{url}} -->url=http://localhost:3000
                  
-
+Global Variables:
+these allows to access the data between the collection,environments, request and testScripts.
+2.these are available thorougth the work place 
   
-
-
-
-
-
+Authentication and Authorization
+1.Both are utilized with respect to the security that permits safety on an automatic data system.
+2.In Authentication process  the identity of the users are checked for providing access to the system 
+  while in Authorization process persons/users authorities are checked for accessing the data.
+3.Authentication is done before the Authorization process.
+  
+  
 
 
 
