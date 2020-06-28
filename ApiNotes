@@ -72,9 +72,10 @@ find app which integated 2 apps(5 apps)
 6.oyo              -->uses hotels api
 
 
+---------------------------------------------------------------------------------------------------------------------------------------
 
+Postman:
 
-Postman
 how to create a collection?
 1.click on the new button on left-top corner/ file-new
 2.select collection,enter the collection name and click on create.
@@ -148,20 +149,64 @@ Authentication and Authorization
 2.In Authentication process  the identity of the users are checked for providing access to the system 
   while in Authorization process persons/users authorities are checked for accessing the data.
 3.Authentication is done before the Authorization process.
-  
-  
 
+-------------------------------------------------------------------------------------------------------------------------------------
 
+Interview questions
 
+1.what is http,structure , request and response key elements?
+2.diff btw XML and JSON?
+3.parser:java pojo to json and viceversa?
+ marshelling/serialization and unmarshelling/deserialization
+ 
+4.response in json is it possible to get as XML?
+ ans: NO
 
+5.tesing app without gui?there is no UI how do you test the application
+ans: yes with apis
 
+6.what is a WebService?
+7.what is API testing?
+8.What are the advantages of web Services?
+9.Which architecture you worked on?
+   ans: service oriented architecture(SOA)
 
+10.Why Rest is popular?
+11.diff btw SOAP and REST?
+12.What are diff tools available for REST Api testing?
 
+13.What is POSTMAN?
+   it is GUI app to test API by sending and receiving api.
+14.CRUD operations?
+15.diff btw PUT and PATCH?
+16.What is PayLoad?
+   ans:  Data we send along with HTTP request is called Payload.(json data)
+17.what is pre-requesite to start the api testing?
+   ans: 1.we should get the list of RestAPI's from the develpoer(Swagger-Documentation)
+        2.Authentication credentials if required
+        3.Api Testing tool like POSTMAN is required
+        4.We should write both Positive as well as negative testcases for API
+        
+18.What do you validate with the API testing?
+  ans : Status code , response time ,header(Content-Type) and actual data        
+19.What are the different responses you have come across?
+  ans : information response,success,redirects,client error,server error
+20.what are the diff status code you come across?
+   ans : 200,201,401,404,204 no content
+21.diff btw URL and URI?
+22.What kind of Authentication you work with?
+23.write down the EndPoints of your application?
+25.Write the JSON Body for perticular EndPoint?
+26.How many API's you have Tested?
+   Ans: 20 
+27.How many TestCases you have written ?
+28.how do you do validation on PostMan?
+29.What are the diff types of Variables in Postman
+   ans: Global , Collection level 
+30.How do you send the response from one request to another request?
+31.diff btw query and path parameters?
 
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------
 
 
 
